@@ -28,7 +28,7 @@ this.formUser = new FormGroup({
   senha: new FormControl(users.senha),
   dataNasc: new FormControl(users.dataNasc),
   sexo: new FormControl(users.sexo),
-  inativo: new FormControl(users.inativo)
+ 
 });
 }
 onSubmit(){

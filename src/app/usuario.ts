@@ -9,5 +9,5 @@ export class User {
   nome:string;
   dataNasc:Date = null;
   sexo:number;
-  inativo: boolean = false;
+  
 }
