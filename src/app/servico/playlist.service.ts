@@ -12,7 +12,9 @@ import{PlayLista} from '../mock-musicas';
 export class PlaylistService {
 
 
-  constructor() { }
+  constructor() {
+
+  }
 }
 
 

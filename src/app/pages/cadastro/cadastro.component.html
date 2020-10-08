@@ -1,38 +1,42 @@
+<form [formGroup] = "formUser" (ngSubmit)= "onSubmit()">
 <div class="grid-cadastro">
-
-  <img src="../../assets/images/Spotify_Logo_feature.png" width="150px" />
+  <img src="../../assets/images/spotifyFundoPreto.jpg" width="127px" />
   <div class="form-group">
-    <label>Email:</label>
-    <input type="text" class="form-control" formControlName="Emai">
+    <label for="email">Endereço de email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+      placeholder="Seu email" formControlName="email">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
   </div>
   <div class="form-group">
-    <label>Confirmar e-mail:</label>
-    <input type="text" class="form-control" formControlName="ConfirEmail">
+    <label for="confirmEmail">Confirme Email</label>
+    <input type="email" class="form-control" id="confirmEmail" placeholder="Confirm Email" formControlName="confemail">
   </div>
   <div class="form-group">
-    <label>Como Devemos Chamer Você?:</label>
-    <input type="text" class="form-control" formControlName="NomeReal">
+    <label for="senha">Senha</label>
+    <input type="password" class="form-control" id="password" placeholder="Senha" formControlName="senha">
   </div>
   <div class="form-group">
-    <label>Data Nascimento:</label>
-    <input type="number" class="form-control" formControlName="DataNasc">
+    <label for="nome">Como devemos chamar você?</label>
+    <input type="text" class="form-control" id="nome" placeholder="Seu nome" formControlName="nome">
+  </div>
+  <div class="form-group">
+    <label for="nome">Data de Nascimento</label>
+    <input type="date" class="form-control" id="nome" placeholder="Seu nome"
+    formControlName="dataNasc">
   </div>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Masculino</label>
+    <input type="checkbox" class="form-check-input" id="sexoM" [value] = "2" formControlName="sexo">
+    <label class="form-check-label" for="sexoM">Sexo Masculino</label>
   </div>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-    <label class="form-check-label" for="exampleCheck2">Feminino</label>
+    <input type="checkbox" class="form-check-input" id="sexoF" [value] = "1"formControlName="sexo">
+    <label class="form-check-label" for="sexoF">Sexo Feminino</label>
   </div>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck3">
-    <label class="form-check-label" for="exampleCheck3">Não binário</label>
+    <input type="checkbox" class="form-check-input" id="naoBinario" [value] = "3"formControlName="sexo">
+    <label class="form-check-label" for="sexoM">Não Binário</label>
   </div>
-  <div class="btnCadastrar">
-    <button type="submit" [disabled]="" class="btn btn-success">
-      Cadastre-se</button>
-  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 
 </div>
-
+</form>

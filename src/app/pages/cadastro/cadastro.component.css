@@ -7,8 +7,8 @@
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 3%;
-    max-width: 400px;
-    height: 680px;
+    max-width: 450px;
+    height: 750px;
     animation-name: fade;
     animation-duration: 1s;
   }
