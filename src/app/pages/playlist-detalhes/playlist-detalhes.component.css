@@ -1,9 +1,17 @@
 .container{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 40%;
     border: 1px solid #ddd;
   padding: 8px;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-top: 3%;
+  background-color: aqua;
+}
+.box-left{
+  margin: 0;
+  position: absolute;               /* 2 */
+  top: 70%;                         /* 3 */
+  transform: translate(0, -50%)
+  
 }

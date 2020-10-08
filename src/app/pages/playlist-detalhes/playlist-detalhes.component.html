@@ -1,8 +1,12 @@
+
+<div class="box-left">
+  <img src="../../../assets/images/anos80.jpg" alt="" width="380px">
+</div>
 <div class="container">
 
 
   <div id="accordion">
-    <img src="../../../assets/images/anos80.jpg" alt="" width="180px">
+    
     <div class="card" *ngFor="let lista of listaMusicas" (click)="onSelect(lista)"
       [class.selected]="lista===listaClicada">
 
