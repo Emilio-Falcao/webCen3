@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "WebCen3"
+    }
+  },
+  "defaultProject": "WebCen3",
+  "cli": {
+    "analytics": "a9c76ddf-e54b-43d5-983d-28e0852a3ddd"
+  }
 }

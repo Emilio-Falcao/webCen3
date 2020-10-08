@@ -1,0 +1,35 @@
+<div class="container">
+
+
+  <div id="accordion">
+    <img src="../../../assets/images/anos80.jpg" alt="">
+    <div class="card" *ngFor="let lista of listaMusicas" (click)="onSelect(lista)"
+      [class.selected]="lista===listaClicada">
+
+      <div class="card-header">
+
+        <div *ngIf="listaClicada" class="details"></div>
+
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+
+
+
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+
+          <span class="badge">Anos 80</span>
+          <table>
+            <tr>
+              <td>{{lista.id}}</td>
+              <td>{{lista.nome}}</td>
+            <td><audio controls [src]="lista.audio" type="audio/ogg"></audio></td>
+            </tr>
+
+
+
+          </table>
+        </div>
+      </div>
+    </div>
