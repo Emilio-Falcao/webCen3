@@ -7,7 +7,7 @@ export class User {
   confemail:string;
   senha:string;
   nome:string;
-  dataNasc:Date = null;
+  dataNasc:Date;
   sexo:number;
-  inativo: boolean = false;
+
 }

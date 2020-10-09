@@ -13,31 +13,8 @@
     animation-duration: 1s;
   }
 
-  form {
-    font-family: 'Quicksand';
-  }
 
-  @keyframes fade {
-    from{
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
-  h4 {
-    padding: 10px;
-    text-align: center;
-    color: #ffb600;
-    font-weight: bolder;
-  }
 
-  button {
-    font-weight: bolder;
-  }
 
-  .btnCadastrar {
-    padding: 5px;
-    text-align: center;
-  }
+

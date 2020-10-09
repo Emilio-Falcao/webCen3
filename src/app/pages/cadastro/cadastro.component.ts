@@ -1,35 +1,39 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/usuario';
-import{FormGroup, FormControl} from '@angular/forms';
+import{FormGroup, FormControl,FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.css']
+  styleUrls: ['./cadastro.component.css'],
 })
 export class CadastroComponent implements OnInit {
-formUser: FormGroup;
+  formUser: FormGroup;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) {}
 
-//Iniciando o Metodo CreaeForm
+  //Iniciando o Metodo CreaeForm
   ngOnInit(): void {
-    this.creatForm(new User);
+    this.creatForm(new User());
   }
-//Metodo
-creatForm(users: User){
-this.formUser = new FormGroup({
-  email: new FormControl(users.email),
-  confemail: new FormControl(users.confemail),
-  senha: new FormControl(users.senha),
-  dataNasc: new FormControl(users.dataNasc),
-sexo: new FormControl(users.sexo),
-inativo: new FormControl(users.inativo)
-});
+  //Metodo
+  creatForm(users: User) {
+    this.formUser = this.formBuilder.group({
+      nome: new FormControl('', [Validators.required]),
+      email: [users.email],
+      confemail: [users.confemail],
+      senha: [users.senha],
+      data: [users.dataNasc],
+      sexo: [users.sexo],
+    });
+  }
+  onSubmit() {
+    console.log(this.formUser.value);
+    alert('Cadastrado com sucesso');
+    this.formUser.reset(new User());
+  }
+  get userNome(): any {
+    return this.formUser.get('nome');
+  }
 }
-onSubmit(){
-  console.log(this.formUser.value);
-alert("Cadastrado com sucesso");
-resizeTo;
-}
-}
+

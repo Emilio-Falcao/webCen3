@@ -12,9 +12,12 @@ import { PlaylistService } from 'src/app/servico/playlist.service';
   styleUrls: ['./playlist-detalhes.component.css']
 })
 export class PlaylistDetalhesComponent implements OnInit {
-  listaMusicas = PlayLista;
+  PlaylistDetalhes = PlayLista;
 
   listaClicada: Lista;
+
+  musicas = new Array()
+  
   constructor() {
 
   }
