@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .row{
   margin-bottom: 1.5%;
   margin-top: 1.5%
@@ -59,3 +60,22 @@ background:#EA0000;
 color:white;
 font-weight: bold;
   }
+=======
+.container{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    border: 1px solid #ddd;
+  padding: 8px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-top: 3%;
+  background-color: aqua;
+}
+.box-left{
+  margin: 0;
+  position: absolute;               /* 2 */
+  top: 70%;                         /* 3 */
+  transform: translate(0, -50%)
+  
+}
+>>>>>>> bf49d518d89524985f9f0f990ae48145d1507ff4

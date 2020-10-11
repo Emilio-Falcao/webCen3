@@ -11,6 +11,8 @@ import { PlaylistComponent } from './pages/playlist/playlist.component';
 import { PlaylistDetalhesComponent } from './pages/playlist-detalhes/playlist-detalhes.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +23,9 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
     PlaylistComponent,
     PlaylistDetalhesComponent,
     CadastroComponent,
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule,MatDialogModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
